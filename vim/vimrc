@@ -5,7 +5,6 @@
 " vim-jedi (noarch)
 " vim-enhanced (x86_64)
 " vim-nerdtree (noarch)
-" vim-omnicppcomplete (noarch)
 " vim-go (noarch)
 "
 
@@ -17,3 +16,5 @@ set laststatus=2
 let g:Tex_DefaultTargetFormat="pdf"
 
 filetype plugin indent on
+
+autocmd vimenter * NERDTree
