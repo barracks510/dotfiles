@@ -1,0 +1,19 @@
+" This VIMRC assumes the following Fedora RPMs are installed.
+" vim-fugitive (noarch)
+" vim-latex (noarch)
+" vim-powerline (noarch)
+" vim-jedi (noarch)
+" vim-enhanced (x86_64)
+" vim-nerdtree (noarch)
+" vim-omnicppcomplete (noarch)
+" vim-go (noarch)
+"
+
+set nocompatible
+
+let mapleader=","
+set number
+set laststatus=2
+let g:Tex_DefaultTargetFormat="pdf"
+
+filetype plugin indent on
