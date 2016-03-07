@@ -11,4 +11,10 @@ deps=(
 'powerline'
 'vim-powerline'
 'tmux-powerline'
+
+'cmake'
+'clang-devel'
+'boost-devel'
+'python3-devel'
+'python-devel'
 )
