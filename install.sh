@@ -28,9 +28,17 @@ if [ -e /etc/fedora-release ]; then
 	fi
 	read_deps
 	sudo dnf install --assumeyes $DEPS
-	if [ -e $HOME/.tmux.conf ]
+	if [ -e $HOME/.tmux.conf ]; then
+		mv $HOME/.tmux.conf $HOME/.tmux.saved
+	fi
 	ln -s $HOME/.config/dotfiles/tmux/tmux.conf $HOME/.tmux.conf
+	if [ -e $HOME/.vim ]; then
+		mv $HOME/.vim $HOME/.vim.saved
+	fi
 	ln -s $HOME/.config/dotfiles/vim $HOME/.vim
+	if [ -e $HOME/.vimrc ]; then
+		mv $HOME/.vimrc $HOME/.vimrc.saved
+	fi
 	ln -s $HOME/.vim/vimrc $HOME/.vimrc
 else
 	echo "You are not running Fedora. " 1>&2
